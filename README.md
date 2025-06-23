@@ -37,5 +37,9 @@ Dependencies:
 #Example:    
 >    python hapltype.py --maf 0.05 -a annotation.gff -r chr1:1000-2000 -u 500 -d 500  
 
->Tips: the annotation for 6k rice data is osa1_r7.gff3     
+>Tips: the annotation for 6k rice data is osa1_r7.gff3
+
+
+
+   
 
