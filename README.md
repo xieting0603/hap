@@ -8,13 +8,13 @@ or genes based on GFF annotations.
 >		python hapltype.py --maf <maf_value> -a <gff_file> [-r <region> | -i <gene_id>] [-u <upstream>] [-d <downstream>]
 
 Arguments:  
->>		    --maf (str): The minimum allele frequency for filtering haplotypes.   
+		    --maf (str): The minimum allele frequency for filtering haplotypes.   
                  Choices are '0', '0.01', '0.02', '0.05'. Default is '0.05'.  
->>		    -a, --gff (str): The GFF file containing the gene annotation. when refer 6K rice haplotype, it should be os1_r7.gff.  
->>		    -r, --region (str): The region of the gene to be analyzed in the format `chr:start-end`.  
->>		    -i, --gene_id (str): The gene ID for the target region, which should be provided with the GFF file.  
->>		    -u, --upstream (int): The upstream distance of the gene. Default is 0.  
->>		    -d, --downstream (int): The downstream distance of the gene. Default is 0.  
+		    -a, --gff (str): The GFF file containing the gene annotation. when refer 6K rice haplotype, it should be os1_r7.gff.  
+		    -r, --region (str): The region of the gene to be analyzed in the format `chr:start-end`.  
+		    -i, --gene_id (str): The gene ID for the target region, which should be provided with the GFF file.  
+		    -u, --upstream (int): The upstream distance of the gene. Default is 0.  
+		    -d, --downstream (int): The downstream distance of the gene. Default is 0.  
   
   
 Functionality:    
@@ -39,13 +39,3 @@ Dependencies:
 
 >Tips: the annotation for 6k rice data is osa1_r7.gff3     
 
->Input Example:    
-    - VCF file: maf0.05_miss0.5.vcf.gz  
-    - GFF file: annotation.gff  
-    - Command: python hapltype.py --maf 0.05 -a annotation.gff -r chr1:1000-2000 -u 500 -d 500  
-
->Output Example:  
-    - raw_table_0.05.out   # Haplotype table output
-    - raw_group_0.05.out   # Haplotype group output
-    - raw_freq_0.05.out    # Haplotype frequency output
-"""
